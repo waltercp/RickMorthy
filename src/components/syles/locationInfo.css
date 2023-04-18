@@ -34,3 +34,15 @@
     color: white;
     font-weight:500;
 }
+
+@media (max-width: 450px) {
+   
+    .location{
+        padding: 1em;
+        max-width: 380px;
+        margin-bottom: 2em;
+    }
+    .location_intem span:nth-child(2){
+        text-align: center;
+    }
+}
