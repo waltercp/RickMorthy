@@ -30,6 +30,8 @@ const Pagination = ({pagerickMorty, currentPage, setCurrentPage, poblacion }) =>
         <nav className='pagination'>
            <button className={`pagination-previous ${currentPage ===1?'is-disabled' : ''} `} onClick={onPreviusPage} > Anterior</button>
         
+
+        
             <ul className='pagination-list'>
                 {
                     pageNumbers.map(noPage => (

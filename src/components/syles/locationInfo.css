@@ -35,12 +35,12 @@
     font-weight:500;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
    
     .location{
         padding: 1em;
         max-width: 380px;
-        margin-bottom: 2em;
+        margin-bottom: 2.5em;
     }
     .location_intem span:nth-child(2){
         text-align: center;
