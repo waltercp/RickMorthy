@@ -8,7 +8,7 @@ function App() {
 
 
   const [inputValue, setInputValue] = useState(getRandomLocation())
-  const url = `https://rickandmortyapi.com/api/location/${inputValue || 4}`
+  const url = `https://rickandmortyapi.com/api/location/${inputValue || 20}`
   const [location, hasError] = useFetch(url)
 
   const inptLocation = useRef()

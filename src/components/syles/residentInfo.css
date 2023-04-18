@@ -1,11 +1,21 @@
 .resident{
-    max-width: 320px;
+    width: 320px;
+    height: 500;
     border-radius:  0.8em;
     background-color: #062226;
     overflow: hidden;
     box-shadow: 0.2em 0.2em 0.5em #0009;
     transition: transform 500ms ease;
 }
+
+.componentLoading{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
 
 .resident:hover{
     transform: scale(1.05);

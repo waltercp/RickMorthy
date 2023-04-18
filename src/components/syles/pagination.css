@@ -7,6 +7,7 @@
 
     align-items: center;
     justify-content: center; 
+    padding: 0.5em;
 }
 
 .pagination-previous{
@@ -15,7 +16,7 @@
     background-color: rgb(125,199,14);
     color: white;
     border: 0;
-    transition: transform 100ms ease;
+    transition: transform 300ms ease;
     
 }
 
@@ -52,6 +53,7 @@
 
 .pagination-list{
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5em;
     align-items: center;
     justify-content: center;
@@ -85,7 +87,6 @@
 
     .pagination{
         gap: 0.4em;
-        flex-direction: row;
     }
 
     .pagination-list{
@@ -95,12 +96,19 @@
     .pagitation-link{
         padding: 0;
         color: rgb(192, 162, 162,0%);
+        width: 0.8em;
+        transition: transform 500ms ease;
+    }
+
+    .pagitation-link:hover{
+        transform: scale(1.1);
     }
 
     .is-current{
         background-color: rgb(248, 240, 240);
         color: #05292E;
-        padding: 0.6em 0.8em;
+        padding: 0.5em;
+        width: 2rem;
     }
 }
 

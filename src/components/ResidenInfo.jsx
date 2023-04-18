@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import useFetch from '../hooks/useFetch'
 import './syles/residentInfo.css'
 import Loading from './Loading'
@@ -14,31 +14,36 @@ const ResidenInfo = ({ url }) => {
 
 
 
-
+    setTimeout(() => {
+        setHasError(true)
+    }, 800)
 
     return (
         <article className='resident'>
             {
-                resident?.image
-                    ? <>
-                        <header className='resident_header'>
-                            <img className='resident_img' src={resident?.image} alt="" />
-                            <div className='resident_status'>
-                                <div className={`resident_status-circle ${resident?.status}`}></div>
-                                <span className='resident_status-label'>{resident?.status}</span>
-                            </div>
-                        </header>
-                        <section className='resident_body'>
-                            <h3 className='resident_name'>{resident?.name}</h3>
-                            <hr className='resident_hr' />
-                            <ul className='resident_list'>
-                                <li className='resident_item'> <span>species </span>  <span>{resident?.species}</span> </li>
-                                <li className='resident_item'> <span>Origin</span>  <span>{resident?.origin.name}</span> </li>
-                                <li className='resident_item'> <span>Eppisodes where appear</span>  <span>{resident?.episode.length}</span> </li>
-                            </ul>
-                        </section>
-                    </>
-                    : <Loading/>
+
+                resident ? <>
+                    <header className='resident_header'>
+                        <img className='resident_img' src={resident?.image || "/icon.png"} alt="" />
+                        <div className='resident_status'>
+                            <div className={`resident_status-circle ${resident?.status}`}></div>
+                            <span className='resident_status-label'>{resident?.status}</span>
+                        </div>
+                    </header>
+                    <section className='resident_body'>
+                        <h3 className='resident_name'>{resident?.name}</h3>
+                        <hr className='resident_hr' />
+                        <ul className='resident_list'>
+                            <li className='resident_item'> <span>species </span>  <span>{resident?.species}</span> </li>
+                            <li className='resident_item'> <span>Origin</span>  <span>{resident?.origin.name}</span> </li>
+                            <li className='resident_item'> <span>Eppisodes where appear</span>  <span>{resident?.episode.length}</span> </li>
+                        </ul>
+                    </section>
+                </>
+
+                    :
+                    <Loading />
+
             }
 
 
