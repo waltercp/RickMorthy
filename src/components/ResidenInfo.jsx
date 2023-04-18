@@ -41,7 +41,7 @@ const ResidenInfo = ({ url }) => {
                             </ul>
                         </section>
                     </>
-                    :Loading
+                    : <Loading/>
             }
 
 
