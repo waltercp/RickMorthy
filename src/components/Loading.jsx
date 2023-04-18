@@ -6,7 +6,7 @@ const Loading = () => {
   return (
     <div className='componentLoading'>
       <section className='loading_body'>
-        <h3 className='loading_name'><h1 >Loading....</h1></h3>
+        <h3 className='loading_name'>Loading....</h3>
         <hr className='loading_hr' />
         <ul className='loading_list'></ul>
       </section>

@@ -1,27 +1,42 @@
-.App{
+.App {
     background-color: #05292E;
     min-height: 120vh;
-    min-width:380px ;
+    min-width: 380px;
 }
 
 
-.app_form{
+.app_form {
     margin-top: 2em;
     display: flex;
     justify-content: center;
     margin-bottom: 2em;
 }
 
-.app_input{
+.app_input {
     padding: 0.6em 1.2em;
     border-radius: 0.5em 0 0 0.5em;
 }
 
-.app_btn{
+.app_btn {
     border-radius: 0 0.5em 0.5em 0;
     padding: 0 1em;
-    background-color: rgb(125,199,14);
+    background-color: rgb(125, 199, 14);
     color: white;
     border: 0;
 }
 
+.app_error {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .app_error {
+        font-size: 20px;
+        padding: 1rem;
+    }
+
+}

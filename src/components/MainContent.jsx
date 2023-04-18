@@ -8,11 +8,9 @@ import Pagination from './Pagination'
 
 
 
-const MainContent = ({ location }) => {
-    const [pagerickMorty, setPagerickMortt] = useState(8)
-    const [currentPage, setCurrentPage] = useState(1)
-
-
+const MainContent = ({ location,pagerickMorty, currentPage, setCurrentPage}) => {
+    
+    
     const lastIndex = currentPage * pagerickMorty
     const firstIndex = lastIndex - pagerickMorty
 

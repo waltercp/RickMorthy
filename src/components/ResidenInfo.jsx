@@ -15,14 +15,11 @@ const ResidenInfo = ({ url }) => {
 
 
 
-    console.log(resident)
-
-
 
     return (
         <article className='resident'>
             {
-                resident
+                resident?.image
                     ? <>
                         <header className='resident_header'>
                             <img className='resident_img' src={resident?.image} alt="" />
