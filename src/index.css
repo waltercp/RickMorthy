@@ -1,0 +1,39 @@
+/*Resest*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, p, ul{
+     margin-top: 0;
+     margin-bottom: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+input{
+    outline: none;
+    border: 0;
+    font-family:  inherit;
+}
+
+button{
+    font-family:  inherit;
+    border: 0;
+    
+}
+
+img{
+    display: block;
+    width: 100%;
+}
